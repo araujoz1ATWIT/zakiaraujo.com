@@ -262,6 +262,12 @@ body {
   border-width: 5px;
 }
 
+.main-name {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 200px;
+  color: #16104f;
+}
+
 .intro-text {
   padding: 70px;
   font-family: 'Bebas Neue', cursive;
