@@ -335,6 +335,17 @@ body {
 		transform: translate(0, 8px);
 	}
 }
+@media (max-width: 1050px) {
+  .sidebar li .tooltip{
+    display: none;
+  }
+  .intro-text {
+    font-size: 250px;
+    text-align: center;
+    padding: 30px;
+  }
+  
+}
 @media (max-width: 550px) {
   .sidebar li .tooltip{
     display: none;
