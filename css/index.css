@@ -270,7 +270,7 @@ body {
 
 .intro-text {
   padding: 70px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'IBM Plex Sans', sans-serif;
   top: 20%;
   display: flex;
   flex-wrap: wrap;
@@ -283,7 +283,7 @@ body {
 .subintro-text {
   padding: 70px;
   padding-bottom: 150px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'IBM Plex Sans', sans-serif;
   top: 20%;
   display: flex;
   flex-wrap: wrap;
@@ -341,6 +341,29 @@ body {
 		transform: translate(0, 8px);
 	}
 }
+@media (max-width: 1930px) {
+    .sidebar li .tooltip{
+      display: none;
+    }
+    .intro-text {
+        font-weight: 300;
+        font-size: 150px;
+        text-align: center;
+        padding: 30px;
+    }
+    .subintro-text {
+        font-size: 50px;
+        padding-top: 0px;
+        padding-bottom: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .main-name {
+        padding-bottom: 0px;
+    }
+
+  }
+
 @media (max-width: 1050px) {
   .sidebar li .tooltip{
     display: none;
@@ -352,6 +375,7 @@ body {
   }
   
 }
+
 @media (max-width: 550px) {
   .sidebar li .tooltip{
     display: none;
