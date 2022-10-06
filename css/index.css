@@ -314,24 +314,28 @@ body {
   }
 
 .secondmainPanel {
-    
     min-height: 100vh;
 }
 .s2header {
-
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 .s2maintext {
-
+    font-size: 15px;
+    line-height: 2rem;
 }
 .github-link {
     background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
-    text-decoration: none;
-    color: #FFF;
     width: 200px;
     height: 50px;
     border-radius: 25px;
-    margin: 30px;
-    border-width: 0;
+    margin-top: 30px;
+    border-width: 2px;
+}
+.github-link a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
 }
 /* Scroll Down */
 
@@ -404,8 +408,19 @@ body {
         margin-bottom: 25px;
     }
     .secondmainPanel {
-        padding: 60px;
+        padding: 140px;
+        padding-top: 60px;
+        padding-bottom: 60px;
         min-height: 100vh;
+    }
+    .secondmainPanel {
+        
+    }
+    .s2header {
+        
+    }
+    .s2maintext {
+    
     }
   }
 
