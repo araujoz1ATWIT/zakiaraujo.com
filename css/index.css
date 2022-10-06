@@ -4,6 +4,10 @@ body {
   background-color: rgb(226, 225, 222);
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 *{
   margin: 0;
@@ -268,10 +272,12 @@ body {
   
 }
 .main-name:hover {
-    color: #4235b9;
+    cursor: pointer;
+    color: #358fb9;
     opacity: 0.6;
-    transition: 0.3s;
-    border-bottom: 2px solid rgba(0, 0, 0, 1);
+    transition: ease-in-out 0.5s;
+    border-bottom: 3px solid rgba(0, 0, 0, 1);
+    transition: border-bottom 300ms;
 }
 
 .intro-text {
@@ -299,8 +305,33 @@ body {
   font-weight: 100;
   font-size: 90px;
 }
+.solid {
+    justify-content: center;
+    align-self: center;
+    border-top: 3px solid rgb(7, 7, 7);
+    border-radius: 20px;
+    width: 85vw;
+  }
+
 .secondmainPanel {
-  min-height: 100vh;
+    
+    min-height: 100vh;
+}
+.s2header {
+
+}
+.s2maintext {
+
+}
+.github-link {
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+    text-decoration: none;
+    color: #FFF;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 30px;
+    border-width: 0;
 }
 /* Scroll Down */
 
@@ -319,6 +350,7 @@ body {
 	margin: 0 auto 16px;
 	text-align: center;
 	width: 60px;
+    
 }
 
 .scrolldown-p1,
@@ -368,7 +400,13 @@ body {
     .main-name {
         padding-bottom: 0px;
     }
-
+    .scrolldown-wrapper {
+        margin-bottom: 25px;
+    }
+    .secondmainPanel {
+        padding: 60px;
+        min-height: 100vh;
+    }
   }
 
 @media (max-width: 1050px) {
