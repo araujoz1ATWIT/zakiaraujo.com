@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'IBM Plex Sans', sans-serif;
+  
 }
 .sidebar{
   border-radius: 20px;
@@ -263,9 +263,15 @@ body {
 }
 
 .main-name {
-  font-family: 'Covered By Your Grace', cursive;
   font-size: 200px;
   color: #16104f;
+  
+}
+.main-name:hover {
+    color: #4235b9;
+    opacity: 0.6;
+    transition: 0.3s;
+    border-bottom: 2px solid rgba(0, 0, 0, 1);
 }
 
 .intro-text {
@@ -347,12 +353,13 @@ body {
     }
     .intro-text {
         font-weight: 300;
-        font-size: 150px;
+        font-size: 120px;
         text-align: center;
         padding: 30px;
+        padding-top: 150px;
     }
     .subintro-text {
-        font-size: 50px;
+        font-size: 40px;
         padding-top: 0px;
         padding-bottom: 100px;
         padding-left: 50px;
@@ -369,10 +376,14 @@ body {
     display: none;
   }
   .intro-text {
-    font-size: 250px;
+    font-size: 150px;
     text-align: center;
     padding: 30px;
   }
+  .main-name {
+    padding: 40px;
+    font-size: 130px;
+}
   
 }
 
