@@ -269,7 +269,7 @@ body {
 .main-name {
   font-size: 200px;
   color: #16104f;
-  
+  text-decoration: none;
 }
 .main-name:hover {
     cursor: pointer;
@@ -321,7 +321,8 @@ body {
     margin-bottom: 20px;
 }
 .s2maintext {
-    font-size: 15px;
+    padding-top: 12px;
+    font-size: 18px;
     line-height: 2rem;
 }
 .github-link {

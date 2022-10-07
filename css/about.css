@@ -1,0 +1,49 @@
+.AboutMeheader {
+    font-size: 50px;
+    font-weight: 500;
+    padding: 20px;
+}
+.aboutmainPanel {   
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    
+}
+.aboutcontentpanel {
+     padding: 60px;
+     padding-bottom: 20px;
+     padding-top: 20px;
+
+}
+.left {
+    padding-right: 50px;
+}
+.left img {
+    height: 300px;
+    padding: 20px;
+}
+.right {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+@media (max-width: 550px) {
+    .left {
+        
+    }
+    .left img {
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 1250px) {
+    .aboutmainPanel { 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left img {
+        height: 200px;
+    }
+}
