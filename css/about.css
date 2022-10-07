@@ -27,11 +27,32 @@
     line-height: 30px;
 }
 
+.leftinvert {
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+}
+.rightinvert {
+    padding-right: 50px;
+}
+.rightinvert img{
+    height: 300px;
+    padding: 20px;
+}
+
 @media (max-width: 550px) {
     .left {
         
     }
     .left img {
+        height: 200px;
+    }
+    .rightinvert {
+        
+    }
+    .rightinvert img{
         height: 200px;
     }
 
@@ -44,6 +65,12 @@
         align-items: center;
     }
     .left img {
+        height: 200px;
+    }
+    .rightinvert {
+        
+    }
+    .rightinvert img{
         height: 200px;
     }
 }
