@@ -5,10 +5,25 @@
     <meta charset="UTF-8">
     <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
     <link rel="stylesheet" href="../css/index.css">
-    <script type="text/javascript" src="/js/index.js"></script>
+    <link rel="stylesheet" href="../css/contact.css">
     <!-- Boxicons CDN Link -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<script src="https://use.fontawesome.com/20ab91acc4.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"></script>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
@@ -21,7 +36,7 @@
     <ul class="nav-list">
     
       <li>
-        <a href="#">
+        <a href="index.html">
           <i class='bx bx-home'></i>
           <span class="links_name">Home</span>
         </a>
@@ -50,7 +65,7 @@
        <span class="tooltip">My Projects</span>
      </li>
      <li>
-      <a href="/html/contact.html">
+      <a href="contact.html">
         <i class='bx bx-envelope' ></i>
         <span class="links_name">Contact</span>
       </a>
@@ -60,6 +75,7 @@
     </ul>
   </div>
   <script>
+    
   let sidebar = document.querySelector(".sidebar");
   let closeBtn = document.querySelector("#btn");
   let searchBtn = document.querySelector(".bx-search");
@@ -87,40 +103,49 @@
     <script>
       AOS.init();
     </script>
-  <!--Website content body-->
-  <!--main Intro text-->
-  <div class="mainPanel">
-    <div class="mainTextContainer" >
-      <h2 class="intro-text">My Name Is <span class="main-name"><a class="main-name" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="50" href="about.html">Zaki Araujo</a></span></h2>
-      <h2 class="subintro-text">A High School Senior from Boston, MA</h2>
-      <div class="scrolldown-wrapper">
-        <div class="scrolldown">
-          <svg height="30" width="10">
-            <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
-            <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
-          </svg>
-        </div>    
-      </div>
-      <div class="solid">
-    </div>
-  </div>
-<!--second main Intro text-->
-  <div class="secondmainPanel">
-    <h2 class="s2header">Quick Background:</h2>
-    <p class="s2maintext" data-aos="fade-left" data-aos-duration="2000">Hi! My name is Zaki I am a senior at the John D O'Bryant School of Math and Science. My family and I are from Cape Verde, a small island off the coast of Africa. 
-        I have one brother and I am very curious and inquisitve, always looking for a chance to try and explore the unknown. If I have learned anything in life its that the easy route is always harder down the line.
-        I am persueing a double major in Computer Science and Mechnical Engineering.
-    </p>
-    <p class="s2maintext" data-aos="fade-right" data-aos-duration="2000">
-
-        I enjoy programming and I have learned a lot about various languages
-        such as Java, Html and Css to name a few. This website was created by me, learning from various tutorials on youtube. It features a fully responsive UI designed to 
-        dynamically adapt to various devices and sizes. My goal is to tell a story through a unqiuely designed website. Enjoy and I hope it is an experience!
-    </p>
-    <button data-aos="flip-down" data-aos-duration="2000" onClick='location.href="https://github.com/araujoz1ATWIT/zakiaraujo.com/commit/61ed1cd3eecef9243a819da66230194bb4b8651c"' class="github-link"><a  target="_blank">View Code Here!</a></button>
-  </div>
-  <a href="about.html">test</a>
+  <section id="contact">
   
+    <h1 class="section-header">Contact</h1>
+    
+    <div class="contact-wrapper">
+    
+    <!-- Left contact page --> 
+      
+      
+    <!-- Left contact page --> 
+      
+        <div class="direct-contact-container">
+  
+          <ul class="contact-list">
+            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Boston, Massachusetts</span></i></li>
+            
+            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-857-800-4128" title="Give me a call">(857) 800-4128</a></span></i></li>
+            
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">zakiaraujo@gmail.com</a></span></i></li>
+            
+          </ul>
+  
+          <hr>
+          <ul class="social-media-list">
+            <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+                <i class='bx bxl-linkedin' aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>       
+          </ul>
+          <hr>
+        </div>
+      
+    </div>
+    
+  </section>    
 
 </body>
 </html>
