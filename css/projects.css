@@ -1,56 +1,52 @@
 .prjheader {
-    padding: 30px;
-    font-size: 40px;
-    font-weight: 500;
+  padding: 30px;
+  font-size: 40px;
+  font-weight: 500;
 }
 .prjmainPanel {
-    padding: 50px;
-    display: flex;
-    
+  padding: 50px;
+  display: flex;
 }
 
 .featuredContentPanel {
-    min-height: 500px;
-    min-width: 500px;
-    border-radius: 50px;
-    justify-content: center;
-    background-color: rgb(226, 225, 222);
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    padding: 40px;
+  min-height: 500px;
+  min-width: 500px;
+  border-radius: 50px;
+  justify-content: center;
+  background-color: rgb(226, 225, 222);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 40px;
 }
 .prjmainPanel > div {
-    padding: 30px;
-    margin: 30px;
+  padding: 30px;
+  margin: 30px;
 }
 .imageContentContainer {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .image_content {
-    border-radius: 50px;
-    max-width: 400px;
+  border-radius: 50px;
+  max-width: 400px;
 }
 .textContent {
-    padding: 20px;
-    
+  padding: 20px;
 }
 .textContent p {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 .featuredContentPanel:hover {
-    
 }
 
 @media (max-width: 550px) {
-    .prjmainPanel {
-        padding: 30px;
-        flex-wrap: wrap;
-    }
-    .featuredContentPanel {
-        min-width: 350px;
-    }
-    .image_content {
-        max-width: 300px;
-    }
+  .prjmainPanel {
+    padding: 30px;
+    flex-wrap: wrap;
   }
-  
+  .featuredContentPanel {
+    min-width: 350px;
+  }
+  .image_content {
+    max-width: 300px;
+  }
+}
