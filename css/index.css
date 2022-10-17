@@ -308,12 +308,13 @@ body {
   justify-content: center;
   align-self: center;
   border-top: 3px solid rgb(7, 7, 7);
-  border-radius: 20px;
   width: 85vw;
 }
 
 .secondmainPanel {
   min-height: 100vh;
+  display: flex ;
+  flex-direction: column;
 }
 .s2header {
   font-size: 40px;
@@ -372,6 +373,10 @@ body {
 .scrolldown-p2 {
   animation-delay: 0.75s;
 }
+.subContentPanel {
+  padding: 20px;
+  margin: 20px;
+}
 
 @keyframes scrolldown {
   0% {
@@ -416,6 +421,9 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
     min-height: 100vh;
+  }
+  .secondmainPanel div {
+    padding: 20px;
   }
   .secondmainPanel {
   }
