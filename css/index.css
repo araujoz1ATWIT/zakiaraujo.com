@@ -294,8 +294,6 @@ body {
   font-size: 300px;
 }
 .subintro-text {
-  padding: 70px;
-  padding-bottom: 150px;
   font-family: "IBM Plex Sans", sans-serif;
   top: 20%;
   display: flex;
@@ -306,8 +304,6 @@ body {
   font-weight: 100;
   font-size: 90px;
   font-size: 40px;
-    padding-top: 0px;
-    padding-bottom: 100px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -415,8 +411,7 @@ body {
   }
   .subintro-text {
     font-size: 40px;
-    padding-top: 0px;
-    padding-bottom: 100px;
+
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -425,6 +420,9 @@ body {
   }
   .scrolldown-wrapper {
     margin-bottom: 25px;
+  }
+  .scrolldown {
+    margin: 0 auto 70px;
   }
   .secondmainPanel {
     padding: 140px;
