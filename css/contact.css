@@ -241,7 +241,13 @@ hr {
     line-height: 55px;
   }
 }
-
+.contactConatiner{
+  display: flex;
+}
+.leftcontact {
+  padding: 30px;
+  font-size: 18px;
+}
 @media screen and (max-width: 410px) {
   .send-button {
     width: 99%;

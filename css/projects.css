@@ -65,6 +65,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 90px;
 }
 .s2header {
   font-size: 40px;
@@ -83,6 +84,8 @@
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   padding: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .additionalStudiesConainter {
   display: flex;
@@ -116,8 +119,11 @@
 /* Hide the images by default */
 .mySlides {
   display: none;
+  
 }
-
+.mySlides img {
+  image-resolution: from-image 300dpi;
+}
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
@@ -184,6 +190,7 @@
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
+  image-resolution: 300dpi;
 }
 
 .active,
