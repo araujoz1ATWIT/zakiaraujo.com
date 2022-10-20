@@ -49,8 +49,10 @@
   padding-bottom: 10px;
 }
 .contentText {
-  line-height: 1.7px;
+  line-height: 2px;
   font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .nb-link{
   background-color: #3fa9f5;
@@ -199,7 +201,7 @@
 }
 
 .image_contentADI {
-  height: 250px;
+  height: 350px;
   padding: 30px;
 }
 
@@ -235,5 +237,12 @@
   }
   .subContentPanel {
     margin: 20px;
+  }
+  .image_contentADI {
+    height: 200px;
+  }
+  .imageContentContainer {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
