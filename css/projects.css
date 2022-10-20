@@ -198,7 +198,10 @@
   opacity: 1;
 }
 
-
+.image_contentADI {
+  height: 250px;
+  padding: 30px;
+}
 
 @media (max-width: 950px) {
   .prjmainPanel {
@@ -228,6 +231,9 @@
   }
   .studiesContentPanel {
     max-width: none;
+    margin: 20px;
+  }
+  .subContentPanel {
     margin: 20px;
   }
 }
