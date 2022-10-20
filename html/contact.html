@@ -6,6 +6,7 @@
     <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/contact.css" />
+    <script type="text/javascript" src="/js/mobileNavbar.js"></script>
     <!-- Boxicons CDN Link -->
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
@@ -41,6 +42,7 @@
     <script type="text/javascript" src="/js/index.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="/js/mobileNavbar.js"></script>
     <script
       type="text/javascript"
       src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"
@@ -48,6 +50,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
+       <!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="../html/index.html" class="active"></a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="../html/index.html">Home</a>
+    <a href="../html/about.html">About</a>
+    <a href="../html/gallery.html">Gallery</a>
+    <a href="../html/resume.html">Resume</a>
+    <a href="../html/projects.html">Projects</a>
+    <a href="../html/contact.html">Contact</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class='bx bx-menu'></i>
+  </a>
+</div>
     <div class="sidebar">
       <div class="logo-details">
         <div class="logo_name">Zaki Araujo</div>
@@ -125,7 +144,7 @@
       <h1 class="section-header">Contact</h1>
       <div class="contactConatiner">
         <div class="leftcontact">
-          <p>Thank you for checking out my website</p>
+          <img class="phoneImgContact" src="../images/perspective_matte-123-128x128.png">
         </div>
         <div class="contact-wrapper">
         <!-- Left contact page -->

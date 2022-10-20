@@ -245,8 +245,12 @@ hr {
   display: flex;
 }
 .leftcontact {
+  
   padding: 30px;
   font-size: 18px;
+}
+.phoneImgContact {
+  padding: 70;
 }
 @media screen and (max-width: 410px) {
   .send-button {

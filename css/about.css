@@ -40,19 +40,10 @@
   height: 300px;
   padding: 20px;
 }
-
-@media (max-width: 550px) {
-  .left {
-  }
-  .left img {
-    height: 200px;
-  }
-  .rightinvert {
-  }
-  .rightinvert img {
-    height: 200px;
-  }
+.topnav {
+  display: none;
 }
+
 
 @media (max-width: 1250px) {
   .aboutmainPanel {
@@ -68,4 +59,21 @@
   .rightinvert img {
     height: 200px;
   }
+}
+
+@media (max-width: 550px) {
+  .aboutcontentpanel {
+    padding: 0px;
+  }
+  .left {
+  }
+  .left img {
+    height: 200px;
+  }
+  .rightinvert {
+  }
+  .rightinvert img {
+    height: 200px;
+  }
+  
 }

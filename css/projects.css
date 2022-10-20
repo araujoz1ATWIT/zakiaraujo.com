@@ -199,7 +199,8 @@
 }
 
 
-@media (max-width: 550px) {
+
+@media (max-width: 950px) {
   .prjmainPanel {
     padding: 30px;
     flex-wrap: wrap;
@@ -211,7 +212,7 @@
     max-width: 300px;
   }
 }
-@media (max-width: 950px) {
+@media (max-width: 550px) {
   .prjmainPanel {
     padding: 30px;
     flex-wrap: wrap;
@@ -221,5 +222,12 @@
   }
   .image_content {
     max-width: 300px;
+  }
+  .additionalStudiesConainter {
+    display: block;
+  }
+  .studiesContentPanel {
+    max-width: none;
+    margin: 20px;
   }
 }
