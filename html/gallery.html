@@ -16,12 +16,12 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
-     <!-- Top Navigation Menu -->
+       <!-- Top Navigation Menu -->
 <div class="topnav">
-  <a href="../html/index.html" class="active"></a>
+  <a href="index.html" class="active"></a>
   <!-- Navigation links (hidden by default) -->
   <div id="myLinks">
-    <a href="../html/index.html">Home</a>
+    <a href="/index.html">Home</a>
     <a href="../html/about.html">About</a>
     <a href="../html/gallery.html">Gallery</a>
     <a href="../html/resume.html">Resume</a>
@@ -33,52 +33,50 @@
     <i class='bx bx-menu'></i>
   </a>
 </div>
-  <div class="sidebar">
-    <div class="logo-details">
+    <div class="sidebar">
+      <div class="logo-details">
         <div class="logo_name">Zaki Araujo</div>
-        <i class='bx bx-menu' id="btn" ></i>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="/index.html">
+            <i class="bx bx-home"></i>
+            <span class="links_name">Home</span>
+          </a>
+          <span class="tooltip">Home</span>
+        </li>
+        <li>
+          <a href="/html/about.html">
+            <i class="bx bx-user"></i>
+            <span class="links_name">About Me</span>
+          </a>
+          <span class="tooltip">About Me</span>
+        </li>
+        <li>
+          <a href="/html/resume.html">
+            <i class="bx bx-receipt"></i>
+            <span class="links_name">Resume</span>
+          </a>
+          <span class="tooltip">Resume</span>
+        </li>
+
+        <li>
+          <a href="../html/projects.html">
+            <i class="bx bx-folder"></i>
+            <span class="links_name">My Projects</span>
+          </a>
+          <span class="tooltip">My Projects</span>
+        </li>
+        <li>
+          <a href="contact.html">
+            <i class="bx bx-envelope"></i>
+            <span class="links_name">Contact</span>
+          </a>
+          <span class="tooltip">Contact</span>
+        </li>
+      </ul>
     </div>
-    <ul class="nav-list">
-    
-      <li>
-        <a href="#">
-          <i class='bx bx-home'></i>
-          <span class="links_name">Home</span>
-        </a>
-         <span class="tooltip">Home</span>
-      </li>
-      <li>
-       <a href="/html/about.html">
-         <i class='bx bx-user' ></i>
-         <span class="links_name">About Me</span>
-       </a>
-       <span class="tooltip">About Me</span>
-     </li>
-     <li>
-       <a href="/html/resume.html">
-        <i class='bx bx-receipt' ></i>
-         <span class="links_name">Resume</span>
-       </a>
-       <span class="tooltip">Resume</span>
-     </li>
-     
-     <li>
-       <a href="../html/projects.html">
-         <i class='bx bx-folder' ></i>
-         <span class="links_name">My Projects</span>
-       </a>
-       <span class="tooltip">My Projects</span>
-     </li>
-     <li>
-      <a href="/html/contact.html">
-        <i class='bx bx-envelope' ></i>
-        <span class="links_name">Contact</span>
-      </a>
-      <span class="tooltip">Contact</span>
-    </li>
-     
-    </ul>
-  </div>
   <script>
   let sidebar = document.querySelector(".sidebar");
   let closeBtn = document.querySelector("#btn");
