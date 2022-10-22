@@ -1,211 +1,62 @@
-#contact {
-  width: 100%;
-  height: 100%;
-}
 
-.section-header {
-  font-size: 35px;
-  text-align: center;
-  margin: 0 auto;
-  padding: 40px 0;
-  color: black;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-}
-
-.contact-wrapper {
+.container {
+  margin: 100px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 20px;
-  position: relative;
-  max-width: 840px;
+  flex-direction: column;
+  width: 60vw;
+  margin-top: 50px;
+  justify-content: center;
 }
-
-/* Left contact page */
-.form-horizontal {
-  /*float: left;*/
-  max-width: 400px;
-  font-family: "Lato";
-  font-weight: 400;
+#message {
+  height: 100px;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    font-family: "IBM Plex Sans", sans-serif;
 }
-
-.form-control,
-textarea {
-  min-width: 400px;
-  background-color: #000;
-  color: #fff;
-  letter-spacing: 1px;
+.Contheader {
+  font-size: 50px;
+  margin: 30px;
+  margin-bottom: 0px;
 }
-
-.send-button {
-  margin-top: 15px;
-  height: 34px;
-  width: 400px;
-  overflow: hidden;
-  transition: all 0.2s ease-in-out;
-}
-
-.alt-send-button {
-  border-radius: 30px;
-  width: 400px;
-  height: 34px;
-  transition: all 0.2s ease-in-out;
-}
-
-.send-text {
-  display: block;
-  margin-top: 10px;
-  font: 700 12px "Lato", sans-serif;
-  letter-spacing: 2px;
-}
-
-.alt-send-button:hover {
-  transform: translate3d(0px, -29px, 0px);
-}
-
-/* Begin Right Contact Page */
-.direct-contact-container {
-  max-width: 400px;
-}
-
-/* Location, Phone, Email Section */
-.contact-list {
-  list-style-type: none;
-  margin-left: -30px;
-  padding-right: 20px;
-}
-
-.list-item {
-  line-height: 4;
-  color: black;
-}
-
-.contact-text {
-  font: 300 18px "Lato", sans-serif;
-  letter-spacing: 1.9px;
-  color: black;
-}
-
-.place {
-  margin-left: 62px;
-}
-
-.phone {
-  margin-left: 56px;
-}
-
-.gmail {
-  margin-left: 53px;
-}
-
-.contact-text a {
-  color: black;
-  text-decoration: none;
-  transition-duration: 0.2s;
-}
-
-.contact-text a:hover {
-  color: black;
-  text-decoration: none;
-}
-
-/* Social Media Icons */
-.social-media-list {
-  position: relative;
-  font-size: 22px;
-  text-align: center;
+.container textarea, input {
   width: 100%;
-  margin: 0 auto;
-  padding: 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
-
-.social-media-list li a {
-  color: #fff;
+.container label {
+  font-size: 18px;
 }
-
-.social-media-list li {
-  position: relative;
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  margin: 10px 3px;
-  line-height: 60px;
-  border-radius: 50%;
-  color: #fff;
-  background-color: rgb(27, 27, 27);
+#submit {
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-.social-media-list li:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  opacity: 0;
-  box-shadow: 0 0 0 1px #fff;
-  transition: all 0.2s ease-in-out;
-}
-
-.social-media-list li:hover {
-  background-color: #fff;
-}
-
-.social-media-list li:hover:after {
-  opacity: 1;
-  transform: scale(1.12);
-  transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
-}
-
-.social-media-list li:hover a {
-  color: #000;
-}
-
-.copyright {
-  font: 200 14px "Oswald", sans-serif;
-  color: #555;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-hr {
-  border-color: rgba(255, 255, 255, 0.6);
-}
-
-/* Begin Media Queries*/
-@media screen and (max-width: 850px) {
-  .contact-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-  .direct-contact-container,
-  .form-horizontal {
-    margin: 0 auto;
-  }
-
-  .direct-contact-container {
-    margin-top: 60px;
-    max-width: 300px;
-  }
-  .social-media-list li {
-    height: 60px;
-    width: 60px;
-    line-height: 60px;
-  }
-  .social-media-list li:after {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-  }
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  background-image: linear-gradient(
+    to right,
+    #84fab0 0%,
+    #8fd3f4 51%,
+    #84fab0 100%
+  );
 }
 
 @media screen and (max-width: 569px) {
+  .container {
+    margin: 10px;
+  }
+  #message {
+    
+  }
   .direct-contact-container,
   .form-wrapper {
     float: none;
