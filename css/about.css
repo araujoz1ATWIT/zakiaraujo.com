@@ -44,7 +44,6 @@
   display: none;
 }
 
-
 @media (max-width: 1250px) {
   .aboutmainPanel {
     flex-direction: column;
@@ -75,5 +74,4 @@
   .rightinvert img {
     height: 200px;
   }
-  
 }

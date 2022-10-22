@@ -2,9 +2,9 @@
 <!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/contact.css" />
@@ -52,23 +52,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-       <!-- Top Navigation Menu -->
-<div class="topnav">
-  <a href="index.html" class="active"></a>
-  <!-- Navigation links (hidden by default) -->
-  <div id="myLinks">
-    <a href="/index.html">Home</a>
-    <a href="../html/about.html">About</a>
-    <a href="../html/gallery.html">Gallery</a>
-    <a href="../html/resume.html">Resume</a>
-    <a href="../html/projects.html">Projects</a>
-    <a href="../html/contact.html">Contact</a>
-  </div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class='bx bx-menu'></i>
-  </a>
-</div>
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="index.html" class="active"></a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="/index.html">Home</a>
+        <a href="../html/about.html">About</a>
+        <a href="../html/gallery.html">Gallery</a>
+        <a href="../html/resume.html">Resume</a>
+        <a href="../html/projects.html">Projects</a>
+        <a href="../html/contact.html">Contact</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="bx bx-menu"></i>
+      </a>
+    </div>
     <div class="sidebar">
       <div class="logo-details">
         <div class="logo_name">Zaki Araujo</div>
@@ -145,28 +145,47 @@
     <h2 class="Contheader">Contact</h2>
 
     <div class="container">
-    
-        <label for="fname">Full Name</label>
-        <input type="text" id="name" name="firstname" placeholder="Enter your full name">
-    
-        <label for="contact">Email</label>
-        <input type="text" id="contact" name="conatct" placeholder="Enter your email">
-    
-        <label for="message">Message</label>
-        <textarea id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-    
-       <button id="submit">Submit!</button>
-    
+      <label for="fname">Full Name</label>
+      <input
+        type="text"
+        id="name"
+        name="firstname"
+        placeholder="Enter your full name"
+      />
+
+      <label for="contact">Email</label>
+      <input
+        type="text"
+        id="contact"
+        name="conatct"
+        placeholder="Enter your email"
+      />
+
+      <label for="message">Message</label>
+      <textarea
+        id="message"
+        name="subject"
+        placeholder="Write something.."
+        style="height: 200px"
+      ></textarea>
+
+      <button id="submit">Submit!</button>
     </div>
 
     <script type="module">
       // Import the functions you need from the SDKs you need
-      import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-database.js"
+      import {
+        getDatabase,
+        ref,
+        set,
+        get,
+        child,
+      } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-database.js";
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
       import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics.js";
       // TODO: Add SDKs for Firebase products that you want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
-      
+
       // Your web app's Firebase configuration
       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
       const firebaseConfig = {
@@ -176,32 +195,24 @@
         storageBucket: "personal-website-2343c.appspot.com",
         messagingSenderId: "35983833798",
         appId: "1:35983833798:web:a60117ab5470cacfd535c7",
-        measurementId: "G-KMK1DYTNYH"
+        measurementId: "G-KMK1DYTNYH",
       };
-      
-      
+
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
-       
+
       // Get a reference to the database service
       const db = getDatabase(app);
-       
-      document.getElementById('submit').addEventListener('click', function() {
-      set(ref(db, 'users/' + Math.random().toString(36).slice(2, 7)), {
-      name: document.getElementById('name').value,
-      email: document.getElementById('contact').value,
-      message: document.getElementById('message').value
+
+      document.getElementById("submit").addEventListener("click", function () {
+        set(ref(db, "users/" + Math.random().toString(36).slice(2, 7)), {
+          name: document.getElementById("name").value,
+          email: document.getElementById("contact").value,
+          message: document.getElementById("message").value,
+        });
+
+        alert("Your form is submitted. I will reach out shortly!");
       });
-       
-      alert('Your form is submitted. I will reach out shortly!');
-      });
-      
-      </script>
-
-
-
-
-
-
+    </script>
   </body>
 </html>

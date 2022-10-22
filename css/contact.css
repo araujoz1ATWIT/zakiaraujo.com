@@ -1,4 +1,3 @@
-
 .container {
   margin: 100px;
   background-color: white;
@@ -12,17 +11,18 @@
 }
 #message {
   height: 100px;
-    width: 100%;
-    background-color: #fff;
-    color: #000;
-    font-family: "IBM Plex Sans", sans-serif;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .Contheader {
   font-size: 50px;
   margin: 30px;
   margin-bottom: 0px;
 }
-.container textarea, input {
+.container textarea,
+input {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -55,7 +55,6 @@
     margin: 10px;
   }
   #message {
-    
   }
   .direct-contact-container,
   .form-wrapper {
@@ -92,11 +91,10 @@
     line-height: 55px;
   }
 }
-.contactConatiner{
+.contactConatiner {
   display: flex;
 }
 .leftcontact {
-  
   padding: 30px;
   font-size: 18px;
 }

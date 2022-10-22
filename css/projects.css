@@ -1,7 +1,7 @@
 .prjheader {
   padding: 30px;
   padding-bottom: 15px;
-  font-size:45px;
+  font-size: 45px;
   font-weight: 500;
 }
 .prjmainPanel {
@@ -54,7 +54,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.nb-link{
+.nb-link {
   background-color: #3fa9f5;
   font-size: 18px;
   width: 200px;
@@ -106,8 +106,6 @@
   margin: 10px;
 }
 
-
-
 * {
   box-sizing: border-box;
 }
@@ -121,7 +119,6 @@
 /* Hide the images by default */
 .mySlides {
   display: none;
-  
 }
 .mySlides img {
   image-resolution: from-image 300dpi;

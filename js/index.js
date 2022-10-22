@@ -4,7 +4,7 @@ AOS.init();
 // below listed default settings
 AOS.init({
   // Global settings:
-  
+
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
   startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
   initClassName: "aos-init", // class applied after initialization
@@ -24,4 +24,4 @@ AOS.init({
   anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
 });
 
-AOS.init({disable: 'mobile'});
+AOS.init({ disable: "mobile" });
