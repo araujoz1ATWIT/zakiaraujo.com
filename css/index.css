@@ -271,6 +271,21 @@ body {
   font-size: 200px;
   color: #16104f;
   text-decoration: none;
+  background-image: linear-gradient(
+    to right,
+    #84fab0 0%,
+    #8fd3f4 51%,
+    #84fab0 100%
+  );
+  
+    background-image: linear-gradient(45deg, #6a11cb, #245df8);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    
+    
 }
 .main-name:hover {
   cursor: pointer;
