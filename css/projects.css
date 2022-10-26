@@ -236,10 +236,21 @@
     margin: 20px;
   }
   .image_contentADI {
-    height: 200px;
+    width: 50%;
   }
   .imageContentContainer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
+}
+.imageContentContainer img {
+  min-width: 50%;
+  height: auto;
+}
+.imageContentContainer img {
+  width: 300px;
+}
+.imageContentContainer {
+  display: flex;
 }
