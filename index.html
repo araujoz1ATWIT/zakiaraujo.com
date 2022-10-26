@@ -1,139 +1,180 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/index.css" />
     <script type="text/javascript" src="/js/mobileNavbar.js"></script>
     <script type="text/javascript" src="/js/index.js"></script>
     <!-- Boxicons CDN Link -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"></script>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
-<body>
-  <!-- Top Navigation Menu -->
-<div class="topnav">
-  <a href="../html/index.html" class="active"></a>
-  <!-- Navigation links (hidden by default) -->
-  <div id="myLinks">
-    <a href="index.html">Home</a>
-    <a href="../html/about.html">About</a>
-    <a href="../html/gallery.html">Gallery</a>
-    <a href="../html/resume.html">Resume</a>
-    <a href="../html/projects.html">Projects</a>
-    <a href="../html/contact.html">Contact</a>
-  </div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class='bx bx-menu'></i>
-  </a>
-</div>
-
-  <div class="sidebar">
-    <div class="logo-details">
-        <div class="logo_name">Zaki Araujo</div>
-        <i class='bx bx-menu' id="btn" ></i>
-    </div>
-    <ul class="nav-list">
-      <li>
-        <a href="index.html">
-          <i class='bx bx-home'></i>
-          <span class="links_name">Home</span>
-        </a>
-         <span class="tooltip">Home</span>
-      </li>
-      <li>
-       <a href="/html/about.html">
-         <i class='bx bx-user' ></i>
-         <span class="links_name">About Me</span>
-       </a>
-       <span class="tooltip">About Me</span>
-     </li>
-     <li>
-       <a href="/html/resume.html">
-        <i class='bx bx-receipt' ></i>
-         <span class="links_name">Resume</span>
-       </a>
-       <span class="tooltip">Resume</span>
-     </li>
-     
-     <li>
-       <a href="../html/projects.html">
-         <i class='bx bx-folder' ></i>
-         <span class="links_name">My Projects</span>
-       </a>
-       <span class="tooltip">My Projects</span>
-     </li>
-     <li>
-      <a href="/html/contact.html">
-        <i class='bx bx-envelope' ></i>
-        <span class="links_name">Contact</span>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="../html/index.html" class="active"></a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="../html/about.html">About</a>
+        <a href="../html/gallery.html">Gallery</a>
+        <a href="../html/resume.html">Resume</a>
+        <a href="../html/projects.html">Projects</a>
+        <a href="../html/contact.html">Contact</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="bx bx-menu"></i>
       </a>
-      <span class="tooltip">Contact</span>
-    </li>
-     
-    </ul>
-  </div>
-  <script>
-  let sidebar = document.querySelector(".sidebar");
-  let closeBtn = document.querySelector("#btn");
-  let searchBtn = document.querySelector(".bx-search");
+    </div>
 
-  closeBtn.addEventListener("click", ()=>{
-    sidebar.classList.toggle("open");
-    menuBtnChange();//calling the function(optional)
-  });
+    <div class="sidebar">
+      <div class="logo-details">
+        <div class="logo_name">Zaki Araujo</div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="index.html">
+            <i class="bx bx-home"></i>
+            <span class="links_name">Home</span>
+          </a>
+          <span class="tooltip">Home</span>
+        </li>
+        <li>
+          <a href="/html/about.html">
+            <i class="bx bx-user"></i>
+            <span class="links_name">About Me</span>
+          </a>
+          <span class="tooltip">About Me</span>
+        </li>
+        <li>
+          <a href="/html/resume.html">
+            <i class="bx bx-receipt"></i>
+            <span class="links_name">Resume</span>
+          </a>
+          <span class="tooltip">Resume</span>
+        </li>
 
-  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
-    sidebar.classList.toggle("open");
-    menuBtnChange(); //calling the function(optional)
-  });
+        <li>
+          <a href="../html/projects.html">
+            <i class="bx bx-folder"></i>
+            <span class="links_name">My Projects</span>
+          </a>
+          <span class="tooltip">My Projects</span>
+        </li>
+        <li>
+          <a href="/html/contact.html">
+            <i class="bx bx-envelope"></i>
+            <span class="links_name">Contact</span>
+          </a>
+          <span class="tooltip">Contact</span>
+        </li>
+      </ul>
+    </div>
+    <script>
+      let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+      let searchBtn = document.querySelector(".bx-search");
 
-  // following are the code to change sidebar button(optional)
-  function menuBtnChange() {
-   if(sidebar.classList.contains("open")){
-     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
-   }else {
-     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
-   }
-  }
-  </script>
+      closeBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+        menuBtnChange(); //calling the function(optional)
+      });
+
+      searchBtn.addEventListener("click", () => {
+        // Sidebar open when you click on the search iocn
+        sidebar.classList.toggle("open");
+        menuBtnChange(); //calling the function(optional)
+      });
+
+      // following are the code to change sidebar button(optional)
+      function menuBtnChange() {
+        if (sidebar.classList.contains("open")) {
+          closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+        } else {
+          closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+        }
+      }
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-  <!--Website content body-->
-  <!--main Intro text-->
-  <div class="mainPanel">
-    <div class="mainTextContainer" >
-      <h2 class="intro-text">My Name Is <span class="main-name"><a class="main-name" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="50" href="about.html">Zaki Araujo</a></span></h2>
-      <h2 class="subintro-text">A High School Senior from Boston, MA</h2>
-      <div class="scrolldown-wrapper">
-        <div class="scrolldown">
-          <svg height="30" width="10">
-            <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
-            <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
-          </svg>
-        </div>    
+    <!--Website content body-->
+    <!--main Intro text-->
+    <div class="mainPanel">
+      <div class="mainTextContainer">
+        <h2 class="intro-text">
+          My Name Is
+          <span class="main-name"
+            ><a
+              class="main-name"
+              data-aos="fade-in"
+              data-aos-duration="2500"
+              data-aos-delay="50"
+              href="about.html"
+              >Zaki Araujo</a
+            ></span
+          >
+        </h2>
+        <h2 class="subintro-text">A High School Senior from Boston, MA</h2>
+        <div class="scrolldown-wrapper">
+          <div class="scrolldown">
+            <svg height="30" width="10">
+              <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+              <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="solid"></div>
-<!--second main Intro text-->
-  <div class="secondmainPanel">
-    <h2 class="s2header">Quick Background:</h2>
-    <p class="s2maintext" data-aos="fade-left" data-aos-duration="2000">Hi! My name is Zaki I am a senior at the John D O'Bryant School of Math and Science. My family and I are from Cape Verde, a small island off the coast of Africa. I have one brother and I am very curious and inquisitive, always looking for a chance to try and explore the unknown. If I have learned anything in life it's that the easy route is always harder down the line. I am pursuing a double major in Computer Science and Mechanical Engineering.
-    </p>
-    <p class="s2maintext" data-aos="fade-right" data-aos-duration="2000">
-      I enjoy programming and I have learned a lot about various languages such as Java, Html, and CSS to name a few. This website was created by me, learning from various tutorials on youtube. It features a fully responsive UI designed to dynamically adapt to various devices and sizes. My goal is to tell a story through a uniquely designed website. To date I have spent about 30 hours on this website and it rounds out at just about 8,000 lines of code. Enjoy and I hope it is an experience!
-    </p>
-    <button data-aos="flip-down" target="_blank" data-aos-duration="2000" onclick="window.open('https://github.com/araujoz1ATWIT/zakiaraujo.com/blob/master/html/projects.html', '_blank') " class="github-link"><a  >View Code Here!</a></button>
-  </div>
-
-</body>
+    <div class="solid"></div>
+    <!--second main Intro text-->
+    <div class="secondmainPanel">
+      <h2 class="s2header">Quick Background:</h2>
+      <p class="s2maintext" data-aos="fade-left" data-aos-duration="2000">
+        Hi! My name is Zaki I am a senior at the John D O'Bryant School of Math
+        and Science. My family and I are from Cape Verde, a small island off the
+        coast of Africa. I have one brother and I am very curious and
+        inquisitive, always looking for a chance to try and explore the unknown.
+        If I have learned anything in life it's that the easy route is always
+        harder down the line. I am pursuing a double major in Computer Science
+        and Mechanical Engineering.
+      </p>
+      <p class="s2maintext" data-aos="fade-right" data-aos-duration="2000">
+        I enjoy programming and I have learned a lot about various languages
+        such as Java, Html, and CSS to name a few. This website was created by
+        me, learning from various tutorials on youtube. It features a fully
+        responsive UI designed to dynamically adapt to various devices and
+        sizes. My goal is to tell a story through a uniquely designed website.
+        To date I have spent about 30 hours on this website and it rounds out at
+        just about 8,000 lines of code. Enjoy and I hope it is an experience!
+      </p>
+      <button
+        data-aos="flip-down"
+        target="_blank"
+        data-aos-duration="2000"
+        onclick="window.open('https://github.com/araujoz1ATWIT/zakiaraujo.com/blob/master/html/projects.html', '_blank') "
+        class="github-link"
+      >
+        <a>View Code Here!</a>
+      </button>
+    </div>
+  </body>
 </html>
