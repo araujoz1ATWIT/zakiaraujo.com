@@ -483,14 +483,19 @@ body {
   }
   .intro-text {
     padding: 30px;
-    font-size: 70px;
+    font-size: 50px;
     text-align: center;
     padding: 30px;
+
   }
   .main-name {
+    font-size: 100px;
     padding: 0;
     margin: 0;
     align-self: center;
+  }
+  .subintro-text {
+    font-size: 30px;
   }
   .mainTextContainer {
     max-width: 100vw;

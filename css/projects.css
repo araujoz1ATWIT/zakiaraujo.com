@@ -203,6 +203,7 @@
   padding: 30px;
 }
 
+
 @media (max-width: 950px) {
   .prjmainPanel {
     padding: 30px;
@@ -216,6 +217,7 @@
   }
 }
 @media (max-width: 550px) {
+
   .prjmainPanel {
     padding: 30px;
     flex-wrap: wrap;
@@ -225,6 +227,9 @@
   }
   .image_content {
     max-width: 300px;
+  }
+  .image_content2 {
+    max-width: 100%;
   }
   .additionalStudiesConainter {
     display: block;
